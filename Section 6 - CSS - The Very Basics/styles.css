@@ -1,0 +1,21 @@
+/* Selectors */
+h1 {
+    /* Properties */
+    color: green;
+
+}
+
+h2 {
+    color: teal;
+    background-color: #ce3411;
+}
+
+button {
+    color: magenta;
+    background-color: lightpink;
+}
+
+p {
+    color: olive;
+    background-color: yellowgreen;
+}

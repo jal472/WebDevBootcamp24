@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+    text-decoration: underline wavy blue;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-family: fantasty, Impact, sans-serif;
+}
+
+p {
+    text-align: left;
+    line-height: 2.0;
+}
