@@ -80,3 +80,25 @@ Specificity
 How the browser decides which rules to apply when multiple rules could apply to the same element.
 It is a measure of how specific a given selector is. The more specific selector wins!
 
+Inline Styles & Important
+Inline Styles are when you insert the style attribute into an element directly. This is not recommended and you should always style your html through your linked css file.
+Ex: <h1 style="color: blue">Hello World</h1>
+Important - denoted as !Important
+Overrides the specificity and cascade of a css stylesheet on an element. This is also not recommended but should be covered.
+Ex: Let's say you have the following styles in your css.
+h1 {
+    color: magenta !important;
+}
+h1.main {
+    color: magenta;
+}
+Even though h1.main is both more specific and at the bottom of the stylesheet, the color magenta will be applied because the !important keyword overrides this.
+
+Inheritance
+This sounds like what it is. If a style is applied to some parent element and no other style is applied to its children, they may inherit the style themselves. This is uncommon.
+Ex: 
+body {
+    color: purple;
+}
+/* Nothing else in style sheet */
+If the body contains more elements like a paragraph <p> or a section <section> they will inherit the color purple from the body style.
