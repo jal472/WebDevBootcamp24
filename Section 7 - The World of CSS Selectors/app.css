@@ -1,0 +1,43 @@
+/* Selectors */
+
+/* Universal */
+/* * {
+    color: pink;
+} */
+
+/* Element */
+button {
+    font-size: 30px;
+}
+
+/* Selector list - use a comma to select multiple */
+h1,
+h2 {
+    color: magenta;
+}
+
+/* ID Selector */
+#username {
+    background-color: blue;
+}
+
+span {
+    color: green;
+}
+
+/* Class selector */
+.tag {
+    background-color: lightgreen;
+}
+
+a {
+    color: red;
+}
+
+/* Descendant selector */
+li a {
+    color: darkblue;
+}
+
+/* descendant selector */
+/* li a {} */

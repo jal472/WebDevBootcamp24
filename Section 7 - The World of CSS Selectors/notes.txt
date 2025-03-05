@@ -1,0 +1,82 @@
+CSS Selectors
+
+So far we have been applying styles to general html elements like a paragraph <p>. CSS selectors are a way to apply styles to specific elements rather than all paragraph elements we can apply it to a single target element.
+
+Universal Selectors
+Selects everything in the document to add style to it. Denoted by a '*'.
+
+Element Selectors
+Select all elements of a type
+
+Selector List
+Use a comma separated list to select multiple elements to apply the same style to
+
+ID selectors
+'#' for an id
+Select a specific element based on its id attribute which you specify in the html.
+
+Class Selector
+'.' for a class
+A class refers to a class of elements which can makeup any combination of html elements.
+The class selector will apply a style to all elements of that class.
+
+Descendant selector
+Example:
+Selects all anchor tags that are descendants of an li 
+li a {
+    color: teal;
+}
+Note the space between element types denotes a descendant selector
+Use this if you want all anchor tags within a list to look the same but not necessarily all anchor tags on the page.
+
+Adjacent Selector
+Selects all elements b adjacent to element a
+a + b {
+    color: green;
+}
+
+Direct-Descendant Selector
+Selects all elements b that are direct descendants and direct descendants only of element a
+a > b {
+    color: blue;
+}
+
+Attribute Selector
+Select all elements a that contain the attribute of some value
+input[type="text"] {
+    width: 300px;
+    color: yellow;
+}
+
+Pseudo-classes
+A keyword added to a selector that lets you style a specific state of the selected element(s). For example, the pseudo-class :hover can be used to select a button when a user's pointer hovers over the button and this selected button can be styled.
+Denoted by a ':' colon
+button:hover {
+    background-color: blue;
+}
+
+Pseudo-elements
+a keyword added to a selector that lets you style a specific part of the selected element(s)
+Denoted by a '::' double colon
+selector::pseudo-element {
+    property: value;
+}
+p::first-line {
+    color: blue;
+    text-transform: uppercase;
+}
+
+The CSS Cascade
+The order your styles are declared in and linked to matters!
+h1 {
+    color: red;
+}
+h1 {
+    color: purple;
+}
+Purple wins!
+
+Specificity
+How the browser decides which rules to apply when multiple rules could apply to the same element.
+It is a measure of how specific a given selector is. The more specific selector wins!
+
