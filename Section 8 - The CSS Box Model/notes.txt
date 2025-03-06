@@ -1,0 +1,21 @@
+The Box Model
+Everything is in a box and that box has properties.
+Content Box, Padding, Border, Margin
+
+Width and Height
+Properties of the Content Box
+width - sets the width of the content area
+height - sets the height of the content area
+
+Border and Border-Radius
+The border surrounding an element (outside the content box)
+Border properties
+    - border-width: thickness of the border
+    - border-color: color of the border
+    - border-style: the line style (dashed, solid, etc.) of the border
+There is a shorthand property that can be used to set all of these in one line called border.
+div {
+    border: 4px green solid;
+}
+You can additionally change a specific side of the border
+border-left-width: 5px;

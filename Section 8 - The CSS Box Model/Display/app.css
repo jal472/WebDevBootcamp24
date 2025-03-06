@@ -1,0 +1,30 @@
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+}
+
+#two h1 {
+    display: inline;
+}
+
+#two span {
+    display: block;
+}
+
+p span {
+    background-color: palevioletred;
+    /* width and height are ignored with inline elements */
+    width: 100px;
+    height: 100px;
+    /* Not pushing content away - just being annoying */
+    padding: 10px;
+    /* padding is respected horizontally but ignored vertically */
+    margin: 50px;
+    /* act like an inline element but width and height are respected */
+    display: inline-block;
+}
