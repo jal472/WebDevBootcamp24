@@ -1,0 +1,23 @@
+Opacity and the Alpha Channel - transparency
+Opacity - attribute you add to an element to make the element itself transparent (0 - 1 value where 0 is completely transparent)
+The Alpha Channel - for rgba
+rgb(red, green, blue, alpha) - alpha is between 0 and 1 where 0 is completely transparent
+
+Position
+sets how an element is positioned in a document; determines how top, bottom, left, and right work
+
+Transitions
+Allow you to transition one property value to another property value
+syntax
+PROPERTY NAME | DURATION | TIMING FUNCTION | DELAY
+tip: single out the properties that you want to transition because if you need to come back to it then any new properties you add may be effected as well
+
+CSS Transforms!
+Transforms allow you to translate everything about the element including its contents
+
+The truth about background
+There are many properties of a background - check mdn
+background is a shorthand for all of these properties
+
+Google Fonts
+Great, free to use

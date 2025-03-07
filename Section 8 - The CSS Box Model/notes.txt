@@ -19,3 +19,36 @@ div {
 }
 You can additionally change a specific side of the border
 border-left-width: 5px;
+Border-Radius - rounds corners or make circles
+
+Padding
+Space between the content box and the border of an element.
+individual properties
+    - padding-left
+    - padding-right
+    - padding-bottom
+    - padding-right
+shorthand property
+    - padding - set all four sides at once
+
+Margin
+the space outside an elements border between the element and something adjacent to it
+same syntax as padding
+
+The Display property
+    - Inline
+    - Block
+    - Inline-Block
+    - And a lot more see mdn for more
+
+CSS Units revisited
+Relative
+    EM - usefull for scaling elements based on some other element or itself scaling (keeping a rounded button the same shape despite changing size)
+        with font size, 1em is the font-size of the parent. 2 em's is twice the font-size of the parent
+        with other properties, 1em is equal to the computed font-size of the element itself
+    REM (root html element) - when you need to avoid nested scaling use rem to keep size relative to the root element
+    % - relative to some other value depending on the type of element
+        width - 50% half the width of the parent
+        line-height - 50% half the font-size
+Absolute
+    px -exactly what you set it to
