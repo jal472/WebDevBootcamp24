@@ -1,0 +1,66 @@
+Intro to Flexbox
+1D layout method for laying out items in rows or columns
+Allows you to distribute space dynamically accross elements of an unknown size, hence the term "flex".
+two axes in a Flexbox
+        Main axis - left to right
+        Cross axis - top to bottom
+
+Properties
+    display: flex
+    Main Axis
+        flex-direction: allows you to change the direction of the main axis
+            row
+            row-reverse
+            column
+            column-reverse
+        justify-content: how the content is distributed across the axis
+            flex-start
+            flex-end
+            center
+            space-between
+            space-around
+            space-evenly
+        flex-wrap: determines whether elements are going to wrap along the main axis onto a new line or a new column
+            nowrap
+            wrap
+            wrap-reverse
+    Cross Axis
+        align-items: distribute items along the cross axis
+            flex-start
+            baseline
+        align-content: control or distribute space on the cross-axis when we have mulitple rows or columns
+            flex-start
+            flex-end
+            center
+            space-between
+            space-around
+            space-evenly
+        align-self: property applied to individual items in the flexbox; change the alignment along the cross-axis for that item
+            same values as align content but applied to that one element only
+    Others for individual items in a flex container
+        flex-basis: defines the initial size of an element before additional space is distributed
+        flex-grow: controls the amount of available space an element should take up. Accepts a unit-less number value.
+            when there is extra space in the container
+        flex-shrink: if items are larger than the container, they shrink according to flex-shrink
+            when there is not enough space in the container
+
+Flex Shorthand property
+    one value, unitless number: flex-grow
+    one value, width/height number+unit: flex-basis
+    two values
+        flex-grow | flex-basis
+    two-values
+        flex-grow | flex-shrink
+    three-values
+        flex-grow | flex-shrink | flex-basis
+    
+Responsive Design and Media Queries
+    Responsive design - Making a site that is able to respond to the device it is displayed on
+    Media Queries - features that we can write into our CSS that allow us to change our styles or add new styles depending on some parameter; commonly screen width, etc.
+
+Media Queries
+    @media (<media-features>: value) {
+        <apply styles>
+    }
+
+    
